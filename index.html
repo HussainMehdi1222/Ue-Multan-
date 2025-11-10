@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Welcome — University of Education Multan</title>
+  <meta name="description" content="Welcome page for University of Education Multan">
+  <style>
+    :root{
+      --bg1:#0f172a;
+      --bg2:#0ea5a3;
+      --card:#0b1220cc;
+      --accent:#ffd166;
+      --glass: rgba(255,255,255,0.06);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;}
+    body{
+      background: linear-gradient(135deg,var(--bg1), #06202a 50%, var(--bg2));
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:32px;
+      color: #e6eef4;
+    }
+    .card{
+      width:100%;
+      max-width:920px;
+      border-radius:20px;
+      padding:32px;
+      background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+      box-shadow: 0 10px 30px rgba(2,6,23,0.6);
+      backdrop-filter: blur(6px);
+      display:grid;
+      grid-template-columns: 1fr 360px;
+      gap:24px;
+      align-items:center;
+    }
+    @media (max-width:880px){ .card{grid-template-columns:1fr; padding:24px} }
+    .hero{
+      padding:12px 6px;
+    }
+    h1{
+      margin:0 0 12px 0;
+      font-size: clamp(28px,4vw,44px);
+      line-height:1.05;
+      color: white;
+      letter-spacing: -0.4px;
+    }
+    p.lead{margin:0 0 18px 0; color:#d6eef0; opacity:0.95;}
+    .buttons{display:flex;gap:12px;flex-wrap:wrap}
+    .btn{
+      appearance:none;
+      border:0;
+      padding:10px 16px;
+      border-radius:10px;
+      font-weight:600;
+      cursor:pointer;
+      background:var(--accent);
+      color:#032027;
+      text-decoration:none;
+      box-shadow: 0 6px 18px rgba(13,40,58,0.35);
+    }
+    .info{
+      background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+      border-radius:12px;
+      padding:18px;
+      color:#dff6f5;
+      font-size:14px;
+    }
+    .logo{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      margin-bottom:12px;
+    }
+    .round{
+      width:56px;height:56px;border-radius:12px;
+      background:linear-gradient(135deg,#ffffff11,#ffffff05);
+      display:flex;align-items:center;justify-content:center;font-weight:700;color:#fff;
+      border:1px solid rgba(255,255,255,0.04);
+      font-size:18px;
+    }
+    footer{margin-top:18px;font-size:13px;color:#bfeae8;opacity:0.9}
+    .small{font-size:13px; opacity:0.9}
+  </style>
+</head>
+<body>
+  <main class="card" role="main" aria-labelledby="welcome-title">
+    <section class="hero">
+      <div class="logo" aria-hidden="true">
+        <div class="round">UE</div>
+        <div class="small">University of Education<br>Multan</div>
+      </div>
+
+      <h1 id="welcome-title">Welcome to Universty of Education multan</h1>
+      <p class="lead">A simple, welcoming landing page. Use this page as the front door of your website — share news, links, or quick contact info.</p>
+
+      <div class="buttons" role="group" aria-label="Primary actions">
+        <a class="btn" href="#about">About</a>
+        <a class="btn" href="#contact">Contact</a>
+      </div>
+
+      <footer class="small">Built with ❤️ — copy, edit, and publish.</footer>
+    </section>
+
+    <aside class="info" id="about">
+      <h3 style="margin-top:0;margin-bottom:8px">Quick Info</h3>
+      <p style="margin:0 0 8px 0"><strong>Location:</strong> Multan, Pakistan</p>
+      <p style="margin:0 0 8px 0"><strong>Purpose:</strong> Welcome page / landing for students and visitors.</p>
+      <p style="margin:0 0 14px 0">To publish this page live, upload this <code>index.html</code> to any free hosting service (GitHub Pages, Netlify, Vercel).</p>
+      <p id="contact" style="margin:0"><strong>Need help?</strong> I can guide you step-by-step to put this online for free.</p>
+    </aside>
+  </main>
+</body>
+</html>
